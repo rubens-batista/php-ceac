@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Creating a Form</h1>
+    <section class="container">
+        <form action="ex01.php" method="get">
+            <p><label for="firstname">Name:</label></p>
+            <p><input type="text" name="fname" id="firstname"></p>
+            <p><label for="lastname">Last Name:</label></p>
+            <p><input type="text" name="lname" id="lastname"></p>
+            <p><input type="hidden" name="secret1" value="password is 12345"></p>
+            <button type="submit" name="submit" value="Send">Send</button>
+        </form>
+    </section>
+</body>
+</html>
