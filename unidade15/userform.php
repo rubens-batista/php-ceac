@@ -53,7 +53,8 @@
             </select></p>
             <p>Comments: <br><textarea name="comments" cols="40" rows="3" maxlength="200"></textarea></p>
             <p>Password: <input type="password" name="password" maxlength="50"></p>
-            <p><input type="submit" value="Submit" name="submit"></p>
+            <p><input type="submit" value="Submit" name="submit">
+            <a href="login.php"><input type="button" value="Login"></a></p>
         </form>
 
         <p><a href="output.php">Check all current records from database</a></p>
