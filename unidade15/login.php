@@ -20,7 +20,8 @@
             //Create condition to check if email and password are equal to the returned row
             if ($login_email == $dbemail) {
                 if ($login_password == $dbpass) {
-                    echo "Welcome $dbfirstname You are in";
+                    echo "<p>Welcome $dbfirstname You are in</p>";
+                    include "navbar.php";
                 }else {
                     echo "Your password is incorrect!";
                 }
@@ -35,23 +36,3 @@
         echo "Please Login...";
     }
 ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <form action="login.php" method="post">
-            <p>Email: <input type="email" name="login_email" size="40" maxlength="50"></p>
-            <p>Password: <input type="password" name="login_password" maxlength="50"></p>
-            <p>
-                <input type="submit" value="Login">
-                <a href="userform.php"><input type="button" value="Register"></a>
-            </p>
-        </form>
-</body>
-</html>
